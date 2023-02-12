@@ -1,15 +1,17 @@
 #ifndef SPAN_H
 #define SPAN_H
+
 #include <iostream>
+#include <vector>
  
 class Span {
 private: 
-	unsigned int N;
- 
+	std::vector<int> span;
+
 public: 
 	Span(); 
 	Span( const Span &other); 
-	Span(unsigned int newN);
+	Span(unsigned int N);
 	~Span(); 
 	Span& operator=( const Span &other); 
 }; 
