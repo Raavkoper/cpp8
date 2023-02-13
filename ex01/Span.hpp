@@ -23,6 +23,10 @@ public:
 	class ArrayAlreadyFull : public std::exception {
 		const char *what() const throw();
 	};
+
+	class NoNumbersStored : public std::exception {
+		const char *what() const throw();
+	};
 }; 
  
 #endif

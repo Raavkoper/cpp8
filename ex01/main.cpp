@@ -1,20 +1,28 @@
 #include "Span.hpp"
 
 int main() {
-	Span spannie(19);
+	{
+		Span sp = Span(5);
 
-	spannie.addNumber(5);
-	spannie.addNumber(8);
-	spannie.addNumber(44);
-	spannie.addNumber(25);
-	spannie.addNumber(7);
-	spannie.addNumber(755);
-	spannie.addNumber(457);
-	try {
-		spannie.addNumber(5);
-	} catch (std::exception &e) {
-		std::cerr << e.what() << std::endl;
+		try {
+			std::cout << sp.shortestSpan() << std::endl;
+		} catch(const std::exception& e) {
+			std::cerr << e.what() << std::endl;
+		}
+
+		sp.addNumber(6);
+		sp.addNumber(3);
+		sp.addNumber(17);
+		sp.addNumber(9);
+		sp.addNumber(11);
+
+		try {
+			sp.addNumber(10);
+		} catch (std::exception &e) {
+			std::cerr << e.what() << std::endl;
+		}
+
+		std::cout << sp.shortestSpan() << std::endl;
+		std::cout << sp.longestSpan() << std::endl;
 	}
-
-	std::cout << spannie.shortestSpan() << std::endl;
 }
