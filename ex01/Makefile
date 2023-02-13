@@ -3,7 +3,7 @@ NAME = array
 COMP = c++
 C_FLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp
+SRC = main.cpp Span.cpp
 OBJS = $(SRC:%.cpp=%.o)
 
 all: $(NAME)
