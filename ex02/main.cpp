@@ -9,7 +9,7 @@ int main()
 
     std::cout << mstack.top() << std::endl;
 
-    // mstack.pop();
+    mstack.pop();
 
     std::cout << mstack.size() << std::endl;
 
