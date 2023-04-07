@@ -3,6 +3,7 @@
 int main() {
 	{
 		Span sp = Span(5);
+		Span rando(10000);
 
 		try {
 			std::cout << sp.shortestSpan() << std::endl;
@@ -24,5 +25,10 @@ int main() {
 
 		std::cout << sp.shortestSpan() << std::endl;
 		std::cout << sp.longestSpan() << std::endl;
+
+		rando.fillingVector(10000);
+		
+		std::cout << rando.shortestSpan() << std::endl;
+		std::cout << rando.longestSpan() << std::endl;
 	}
 }

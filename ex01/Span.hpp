@@ -19,6 +19,7 @@ public:
 	void addNumber(int num);
 	int shortestSpan();
 	int longestSpan();
+	void fillingVector(int N);
 
 	class ArrayAlreadyFull : public std::exception {
 		const char *what() const throw();

@@ -48,3 +48,8 @@ int Span::longestSpan() {
 	int max = *std::max_element(vec.begin(), vec.end());
 	return (max - min);
 }
+
+void Span::fillingVector(int N) {
+	for (int i = 0; i < N; i++)
+		this->addNumber(rand() % (N * 3));
+}
